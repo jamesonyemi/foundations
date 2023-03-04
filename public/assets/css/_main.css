@@ -1,0 +1,671 @@
+/*
+  Admin Dashboard KGL Foundation
+*/
+
+@font-face {
+    font-family: 'Foco';
+    src: url('../../fonts/Foco-Bold.woff2') format('woff2'),
+        url('../../fonts/Foco-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Foco';
+    src: url('../../fonts/FocoLight-Regular.woff2') format('woff2'),
+        url('../../fonts/FocoLight-Regular.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Foco';
+    src: url('../../fonts/Foco-Regular.woff2') format('woff2'),
+        url('../../fonts/Foco-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Foco';
+    src: url('../../fonts/FocoBlack-Regular.woff2') format('woff2'),
+        url('../../fonts/FocoBlack-Regular.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MARI&DAVID';
+    src: url('../../fonts/MARIDAVIDBOLD.eot');
+    src: url('../../fonts/MARIDAVIDBOLD.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/MARIDAVIDBOLD.woff2') format('woff2'),
+        url('../../fonts/MARIDAVIDBOLD.woff') format('woff'),
+        url('../../fonts/MARIDAVIDBOLD.ttf') format('truetype'),
+        url('../../fonts/MARIDAVIDBOLD.svg#MARI&DAVIDBOLD') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MARI&DAVID';
+    src: url('../../fonts/MARIDAVID.eot');
+    src: url('../../fonts/MARIDAVID.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/MARIDAVID.woff2') format('woff2'),
+        url('../../fonts/MARIDAVID.woff') format('woff'),
+        url('../../fonts/MARIDAVID.ttf') format('truetype'),
+        url('../../fonts/MARIDAVID.svg#MARI&DAVID') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body {
+	font-family: 'Foco';
+	overflow-x: hidden;
+	margin: auto 0;
+}
+
+a {
+	text-decoration: none;
+	color: #444444;
+}
+
+h1 {
+	font-weight: 200;
+	font-size: 42px;
+}
+
+h2 {
+	font-size: 30px;
+	color: #444444;
+	text-align: center;
+}
+
+h3 {
+	font-size: 18px;
+	text-align: left;
+	font-weight: 200;
+	margin: 0;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+}
+
+p {
+	font-size: 16px;
+	line-height: 24px;
+}
+audio, embed, img, object, video {
+    height: auto;
+    max-width: 100%;
+}
+ul {
+	list-style: outside none;
+	margin: 0;
+	padding: 0;
+}
+li {
+	display: inline-block;
+}
+
+header {
+	width: 100%;
+	background: #00a352;
+	color: #fff;
+	padding-bottom: 13px;
+}
+header .grid-pad {
+	padding-top: 15px;
+}
+.u-logo {
+	margin-top: 3px;
+}
+.u-logo svg {
+    width: 88px;
+}
+.Ct-f-gh {
+    border-radius: 29px;
+    height: 38px;
+    line-height: 56px;
+    border: solid 1px #009247;
+    padding: 5px;
+    width: 38px;
+    overflow: hidden;
+    background-size: cover;
+    display: inline-block;
+    margin-left: 5px;
+    float: right;
+    background: #fff;
+}
+img.jKR4Ec {
+    border-radius: 29px;
+    vertical-align: top;
+    display: inline-block;
+    height: 100%;
+}
+.user-props {
+	text-align: right;
+	line-height: 3.2;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+.u-logo span {
+    text-transform: uppercase;
+    font-size: 17px;
+    position: relative;
+    top: -11px;
+    left: 11px;
+    border-left: 1px solid;
+    padding-left: 7px;
+    font-weight: bold;
+}
+
+.dashboard {
+	margin: auto;
+  width: 900px;
+
+}
+.dashboard-header {
+	padding-bottom: 15px;
+	padding-top: 10px;
+	position: relative;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.dashboard-header:before {
+	position: absolute;
+	background: #000;
+	content: '';
+	height: 10px;
+	width: 10px;
+	bottom: 0;
+}
+.dashboard-header h3 {
+	text-align: left;
+	font-size: 2rem;
+	color: #00a352;
+}
+.dashboard-header p {
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #2e3045;
+	letter-spacing: 0.5px;
+}
+
+.submit_calendar_box > h3 {
+	text-align: left;
+}
+.month-and-year h4 {
+	margin: 0;
+}
+.uploads {
+	display: block;
+	width: 100%;
+	padding-top: 20px;
+	text-align: left;
+}
+
+.uploads h3, h3.publication {
+	font-size: 30px;
+}
+
+.publication h3 {
+	font-size: 30px;
+	padding-bottom: 10px;
+}
+.publication .form-group {
+	margin-bottom: 5px;
+}
+
+
+
+
+.form-container {
+    align-items: center;
+    display: block;
+    height: 50vh;
+    justify-content: center;
+    width: 64%;
+}
+.form-container form {
+  background-color: #fff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+.form-container form.open .calendar-popup {
+  opacity: 1;
+}
+.form-container form i {
+  padding: 0 10px 0 15px;
+}
+.form-container form input {
+  background-color: transparent !important;
+  border: none;
+  border-left: 1px solid #eee;
+  padding: 15px 25px;
+}
+.form-container .calendar-popup {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  opacity: 0;
+  padding: 10px;
+  position: absolute;
+  top: calc(100% + 5px);
+  transition: all 0.1s linear;
+  width: 100%;
+}
+.form-container .calendar-popup .month-and-year {
+  align-items: center;
+  display: flex;
+  text-align: center;
+  text-transform: uppercase;
+}
+.form-container .calendar-popup .month-and-year h4 {
+  width: 100%;
+}
+.form-container .calendar-popup .button {
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  outline: none;
+  position: absolute;
+  top: 15px;
+}
+.form-container .calendar-popup .button:hover {
+  cursor: pointer;
+}
+.form-container .calendar-popup .button.prev {
+  left: 10px;
+}
+.form-container .calendar-popup .button.next {
+  right: 10px;
+}
+.form-container .calendar-popup table {
+  font-size: 12px;
+  width: 100%;
+}
+.form-container .calendar-popup table tr {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 5px 0;
+}
+.form-container .calendar-popup table tr th,
+.form-container .calendar-popup table tr td {
+  text-align: center;
+}
+.form-container .calendar-popup table .day:hover {
+  cursor: pointer;
+}
+
+
+
+/* ===================== FILE INPUT ===================== */
+.file-area {
+  width: 100%;
+  position: relative;
+}
+.file-area input[type=file] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.file-area .file-dummy {
+  width: 100%;
+  padding: 20px;
+  background: rgba(107, 209, 148, 0.4);
+  border: 0px dashed rgba(107, 209, 148, 0.3);
+  text-align: center;
+  transition: background 0.3s ease-in-out;
+  -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 20px;
+    background: rgba(152, 234, 185, 0.4);
+    border: 0px dashed rgba(107, 209, 148, 0.3);
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+     font-family: 'Foco';
+}
+.checkbox input {
+	width: auto;
+}
+
+.file-area .file-dummy .success {
+  display: none;
+}
+.file-area:hover .file-dummy {
+  background: rgba(107, 209, 148, 0.3);
+}
+.file-area input[type=file]:focus + .file-dummy {
+  outline: 1px solid rgba(0, 163, 82, 0.5);
+  
+}
+.file-area input[type=file]:valid + .file-dummy {
+  border-color: rgba(0, 255, 0, 0.4);
+  background-color: rgba(0, 255, 0, 0.3);
+}
+.file-area input[type=file]:valid + .file-dummy .success {
+  display: inline-block;
+}
+.file-area input[type=file]:valid + .file-dummy .default {
+  display: none;
+}
+
+/* ===================== BASIC STYLING ===================== */
+* {
+  box-sizing: border-box;
+}
+
+
+label {
+  font-weight: 300;
+  display: block;
+  margin: 4px 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  overflow: hidden;
+  font-family: 'Foco';
+}
+label span {
+  float: right;
+  text-transform: none;
+  font-weight: 200;
+  line-height: 1em;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.form-controll {
+  display: block;
+  padding: 8px 16px;
+  width: 100%;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  font-weight: 200;
+}
+.form-controll:focus {
+  outline: 1px solid rgba(255, 255, 255, 0.5);
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
+button {
+    padding: 19px;
+    background: rgba(4, 157, 215, 0.8);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    border: 0;
+    cursor: pointer;
+    font-family: 'Foco';
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+.form-group {
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.back-to-article {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  text-decoration: none;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 18px;
+  transition: all 0.3s ease-in-out;
+  opacity: 0.6;
+}
+.back-to-article:hover {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.8);
+}
+.uploads h3 {
+	margin-bottom: 20px;
+}
+.media_upload li {
+    margin-right: 10px;
+    width: 47.6%;
+}
+.media_upload span {
+    padding-bottom: 10px;
+    display: block;
+}
+.default i {
+    font-size: 15px;
+    background: #049dd7;
+    padding: 6px;
+    border-radius: 333px;
+    margin-left: 10px;
+    color: #fff;
+}
+
+
+
+
+
+/*Login*/
+
+.left {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-size: cover;
+    text-indent: -9999px;
+}
+.right {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    text-align: center;
+    background: #049dd7;
+}
+#logo {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    width: 129px;
+    height: 45px;
+    text-indent: -9999px;
+    background-image: url(../img/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.control-box {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logn-form {
+	display: block;
+	width: 100%;
+}
+.rads {
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, .2);
+    width: 400px;
+    padding: 40px 40px 30px 40px;
+    position: relative;
+    color: #fff;
+}
+.rads input {
+	-webkit-border-radius: 333px;
+    -moz-border-radius: 333px;
+    border-radius: 333px;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 17px;
+    background: rgba(255, 255, 255, .6);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+.rads input:focus {
+	background: rgba(255, 255, 255, .8);
+	transition: all 0.3s ease-in-out;
+}
+.rads label {
+	font-size: 15px;
+font-weight: bold;
+}
+.rads button {
+	-webkit-border-radius: 333px;
+    -moz-border-radius: 333px;
+    border-radius: 333px;
+    background: rgba(14, 47, 94, 0.9);
+    margin: 10px 0 0 0 ;
+    transition: all 0.3s ease-in-out;
+}
+.rads button:hover {
+	background: rgba(14, 47, 94, 1);
+	transition: all 0.3s ease-in-out;
+	}
+.rads h1 {
+	margin: 0 0 40px 0;
+	font-weight: 900;
+}
+.uploads a, .publication a {
+	display: block;
+	margin-bottom: 20px;
+	color: #00a352;
+	font-size: 17px;
+	text-decoration: underline;
+	transition: all 0.3s ease-in-out;
+	line-height: 1.2;
+}
+.uploads a:hover, .publication a:hover {
+	color: #049dd7;
+	transition: all 0.3s ease-in-out;
+	text-decoration: none;
+	}
+.reject_btn {
+	background: rgba(191, 4, 4, 0.9);
+}
+.uploads span i {
+	margin-right: 5px;
+}
+._program-wrap {
+	padding-left: 20px;
+	margin-bottom: 20px;
+	margin-top: 30px;
+}
+._program-wrap h1 {
+	margin: 0;
+	padding: 0;
+}
+table {
+	background: #f1f1f1;
+}
+table tbody td {
+	padding: 10px;
+}
+table tbody td a {
+	margin-bottom: 0 !important;
+}
+table tbody tr.theader {
+	background: #00a352;
+	color: #fff !important;
+}
+table tbody tr {
+
+}
+.btn {
+    background: #00a352;
+    display: block;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff !important;
+    text-align: center;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+.publication span {
+    text-align: center;
+    display: block;
+    font-size: 26px;
+    padding-top: 15px;
+    color: #d61805;
+}
+.user-props a {
+	color: #f2d500;
+}
+.user-props a.log-out {
+	border-right: solid 1px #f2d500;
+	padding-right: 7px;
+	padding-left: 3px;
+}
+.user-props span:last-child {
+	padding-left: 10px;
+	display: inline-block;
+}
+.user-props span {
+	padding-left: 7px;
+}
+.user-props span i {
+	padding-right: 3px;
+}
+.user-props aside {
+	padding-right: 10px;
+	display: inline-block;
+}
+.auth input {
+	width: 100%;
+	border: solid 1px #ccc;
+	padding: 13px 15px;
+	color: #202341;
+	-webkit-transition: all .3s;
+    transition: all .3s;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    border-radius: 2rem;
+}
+.auth button {
+	-webkit-transition: all .3s;
+    transition: all .3s;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    border-radius: 2rem;
+    background: #00a352;
+    padding: 13px;
+}
+
+

@@ -1,0 +1,33 @@
+<?php
+
+return [
+
+	"gaps"  => "Competency Gaps",
+	"kpis_execution"  => "KPI Performance Execution",
+	"kpis_activity"  => "KPI Activities",
+	"kpi"  => "Key Performance Indicator",
+	"kra"  => "Key Result Area",
+	"section" => "KRA Perspective",
+	"objective" => "Objective",
+	"objectives" => "Objectives",
+	"responsibility" => "Responsibility",
+	"name"   => "Name",
+	"activity"   => "Activity",
+	"comment"   => "Comment",
+	"weight"   => "Weight",
+	"timeline"   => "Timeline",
+	"new"   => "New Competency Gap",
+	"new_learning_gap"   => "New Learning Gap",
+	"new_activity"   => "New KPI Activity",
+	"self_rating"   => "Self Rating",
+	"agreed_rating"   => "Manager Rating",
+	"new_review"   => "New KPI Review",
+	"edit"   => "Edit KPI",
+	"edit_objective"   => "Edit KPI Objective",
+	"edit_performance"   => "Edit KPI Performance Execution",
+	"edit_review"   => "Edit KPI Review",
+	"details"   => "Competency Gap Details",
+	"performance_details"   => "KPI Performance Execution Details",
+	"delete"   => "Delete KPI",
+	"review"   => "KPI Performance Review",
+];
